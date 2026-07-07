@@ -6,6 +6,9 @@ from zoneinfo import ZoneInfo
 
 WEBHOOK = os.getenv("WEBHOOK")
 
+# ID del rol que deseas mencionar
+ROLE_ID = "123456789012345678"
+
 # Hora de Chile
 fecha = datetime.now(ZoneInfo("America/Santiago"))
 
@@ -15,7 +18,7 @@ frecuencia = round(random.uniform(200.00, 999.99), 2)
 embed = {
     "title": "📻 Frecuencia del Día",
     "description": "La frecuencia asignada para las comunicaciones de hoy es:",
-    "color": 3447003,  # Azul
+    "color": 3447003,
     "fields": [
         {
             "name": "📡 Frecuencia",
@@ -37,6 +40,10 @@ embed = {
 requests.post(
     WEBHOOK,
     json={
-        "embeds": [embed]
+        "content": f"<@&{1497107907429273661}>",
+        "embeds": [embed],
+        "allowed_mentions": {
+            "roles": [1497107907429273661]
+        }
     }
 )
