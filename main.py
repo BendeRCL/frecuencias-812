@@ -42,7 +42,7 @@ requests.post(
         "content": "<@&1497107907429273661>",
         "embeds": [embed],
         "allowed_mentions": {
-            "roles": ["1497107907429273661"]
+            "roles": ["1528804634293043290"]
         }
     }
 )
