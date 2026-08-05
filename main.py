@@ -1,4 +1,3 @@
-import random
 import requests
 import os
 from datetime import datetime
@@ -6,14 +5,14 @@ from zoneinfo import ZoneInfo
 
 WEBHOOK = os.getenv("WEBHOOK")
 
-# ID del rol que deseas mencionar
-ROLE_ID = "123456789012345678"
-
 # Hora de Chile
 fecha = datetime.now(ZoneInfo("America/Santiago"))
 
-# Frecuencia aleatoria
-frecuencia = round(random.uniform(200.00, 999.99), 2)
+# Día del mes (01 al 31)
+dia = fecha.strftime("%d")
+
+# Frecuencia fija según el día
+frecuencia = f"812.{dia}"
 
 embed = {
     "title": "📻 Frecuencia del Día",
@@ -22,7 +21,7 @@ embed = {
     "fields": [
         {
             "name": "📡 Frecuencia",
-            "value": f"**{frecuencia:.2f} MHz**",
+            "value": f"**{frecuencia} MHz**",
             "inline": False
         },
         {
@@ -40,10 +39,10 @@ embed = {
 requests.post(
     WEBHOOK,
     json={
-        "content": f"<@&{1497107907429273661}>",
+        "content": "<@&1497107907429273661>",
         "embeds": [embed],
         "allowed_mentions": {
-            "roles": [1497107907429273661]
+            "roles": ["1497107907429273661"]
         }
     }
 )
