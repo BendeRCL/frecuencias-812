@@ -39,7 +39,7 @@ embed = {
 requests.post(
     WEBHOOK,
     json={
-        "content": "<@&1497107907429273661>",
+        "content": "<@&1528804634293043290>",
         "embeds": [embed],
         "allowed_mentions": {
             "roles": ["1528804634293043290"]
