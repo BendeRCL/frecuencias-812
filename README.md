@@ -5,7 +5,8 @@ Este proyecto selecciona o genera una frecuencia (MHz) y publica un mensaje (emb
 
 ## Captura de ejemplo
 La siguiente imagen muestra el tipo de mensaje/embed que se genera y publica (Image2):
-![Ejemplo de frecuencia publicada](images/imagen2.png)
+![Ejemplo de frecuencia publicada](<img width="495" height="232" alt="image" src="https://github.com/user-attachments/assets/48c02350-982e-45bb-8454-a868d6fc6985" />
+)
 
 ## Características
 - Genera una frecuencia diaria (en MHz).
@@ -48,4 +49,3 @@ Variables recomendadas:
 - `TIMEZONE` (opcional) — zona horaria para la fecha publicada (p. ej. "America/Santiago").
 - `DRY_RUN` (opcional) — si está implementado, cuando esté en `true` no envía el webhook y solo imprime el resultado.
 
-Si prefieres usar un `.env`:
