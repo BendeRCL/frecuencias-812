@@ -4,9 +4,8 @@ Generador automático de la "Frecuencia del Día" y notificador.
 Este proyecto selecciona o genera una frecuencia (MHz) y publica un mensaje (embed) en un canal (por ejemplo vía webhook de Discord). Está pensado para ejecutarse periódicamente (p. ej. diariamente) mediante GitHub Actions o un cron local.
 
 ## Captura de ejemplo
-La siguiente imagen muestra el tipo de mensaje/embed que se genera y publica (Image2):
-![Ejemplo de frecuencia publicada] <img width="495" height="232" alt="image" src="https://github.com/user-attachments/assets/48c02350-982e-45bb-8454-a868d6fc6985" />
-
+La siguiente imagen muestra el tipo de mensaje/embed que se genera y publica:
+<img width="495" height="232" alt="image" src="https://github.com/user-attachments/assets/48c02350-982e-45bb-8454-a868d6fc6985" />
 
 ## Características
 - Genera una frecuencia diaria (en MHz).
@@ -17,7 +16,7 @@ La siguiente imagen muestra el tipo de mensaje/embed que se genera y publica (Im
 - `main.py` — script principal que genera la frecuencia y realiza el post.
 - `requirements.txt` — dependencias (por ejemplo `requests`).
 - `.github/workflows/radio.yml` — workflow de ejemplo para ejecución programada.
-- `images/` — carpeta para capturas y ejemplos (añade `imagen2.png` aquí).
+- `images/` — carpeta para capturas y ejemplos.
 
 ## Requisitos
 - Python 3.8+  
