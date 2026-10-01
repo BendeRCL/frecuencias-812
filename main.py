@@ -12,7 +12,7 @@ fecha = datetime.now(ZoneInfo("America/Santiago"))
 dia = fecha.strftime("%d")
 
 # Frecuencia fija según el día
-frecuencia = f"354.{dia}"
+frecuencia = f"854.{dia}"
 
 embed = {
     "title": "📻 Frecuencia del Día",
